@@ -1,0 +1,9 @@
+@import '../../../variables.scss';
+
+.MainOrdersWrapper {
+    margin-top: 15px;
+    width: 100%;
+    height: calc(100vh - 60px - 30px - 15px - 15px - 145px);
+    background-color: $col-white-grey-bg;
+    border-radius: 5px;
+}

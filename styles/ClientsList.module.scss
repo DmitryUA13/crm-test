@@ -1,0 +1,5 @@
+@import './variables.scss';
+
+.ClintsListWrapper {
+    @include mainSettingSection ($col-white-blue-bg, $col-white-blue-bg, $col-white-blue-bg-grad, $col-white-blue-bg );
+}

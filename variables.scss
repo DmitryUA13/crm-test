@@ -1,0 +1,42 @@
+$col-dark-grey-bg: #24293F;
+$col-dark-grey-bg-grad: #343b5c;
+$col-white-blue-bg: #CAD6E8;
+$col-white-blue-bg-grad: #9cbdee;
+$col-white-grey-bg: #F2F2F2;
+$col-blue-sea: #2D9CDB;
+$col-orange: #F2994A;
+$col-green: #27AE60;
+
+$col-h1: #060606;
+$col-h2: #24293f;
+$col-h3: #24293f;
+$col-text: #58638c;
+
+
+
+$header-hieght: 60px;
+$footer-height: 30px;
+$brdrRadius: 5px;
+
+
+@mixin shadow-white {
+    box-shadow: 0 0 10px 5px #f2f2f211;
+}
+
+@mixin shadow-black {
+    box-shadow: 0 0 10px 5px #2b2b2b21;
+}
+@mixin blueBcrgdMxn{
+    background: linear-gradient(45deg, #2b2b2b21, #2b2b2b21, #2b2b2b21, #2b2b2b21);
+}
+
+@mixin mainSettingSection ($shadowColor, $linGrdaCol1, $linGrdaCol2, $linGrdaCol3) {
+    width: 100%;
+    height: calc(100vh - $header-hieght - $footer-height - $footer-height);
+    border-radius: 5px;
+    box-shadow: 0 0 10px 3px $shadowColor;
+    background: linear-gradient(45deg, $linGrdaCol1, $linGrdaCol2, $linGrdaCol3),
+    linear-gradient(180deg, $linGrdaCol1 20%, $linGrdaCol2 50%, $linGrdaCol3 70%),
+    linear-gradient(290deg, $linGrdaCol1 40%, $linGrdaCol2 50%, $linGrdaCol3 70%);
+    padding: 15px;
+}    

@@ -1,0 +1,48 @@
+@import './variables.scss';
+
+.navBox {
+  width: 100%;
+  .menuBox {
+    width: inherit;
+    .li {
+      width: inherit;
+      height: 40px;
+      list-style: none;
+      margin: 10px 0px;
+      padding: 0px 15px;
+      .linkBox {
+        list-style: none;
+        color: $col-white-grey-bg;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .svgIco {
+          width: 30px;
+          height: 30px;
+          display: flex;
+          align-items: center;
+          path {
+            color: $col-white-grey-bg;
+          }
+        }
+      }
+    }
+    .li:hover {
+      list-style: none;
+      color: red;
+      background-color: #fff;
+      padding: 0px 10px;
+      .linkBox {
+        color: $col-dark-grey-bg;
+        .iconBox {
+          .svgIco {
+            path {
+              color: $col-dark-grey-bg;
+            }
+          }
+        }
+      }
+    }
+
+  }
+}

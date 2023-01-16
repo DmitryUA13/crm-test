@@ -1,0 +1,150 @@
+@import "../../variables.scss";
+.AnaliticWrapper {
+  width: 100%;
+  height: 100px;
+  border-radius: 5px;
+  background-color: $col-white-grey-bg;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .Total {
+    width: 40%;
+    .Text {
+      font-size: 14px;
+    }
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+    background-color: $col-white-blue-bg;
+    margin: 5px 0px 5px 5px;
+    padding: 5px;
+    height: 90px;
+    display: flex;
+    .TotalLeft, .TotalRight {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 40%;
+      table {
+        width: 100%;
+        tbody {
+          tr {
+            display: flex;
+            justify-content: space-between;
+          }
+        }
+      }
+    }
+  }
+  .TotalMoney {
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    font-size: 12px;
+    table {
+      width: 100%;
+      tbody {
+        tr {
+          display: flex;
+          justify-content: space-between;
+        }
+      }
+    }
+    .TotalMoneyLeft {
+      min-width: 200px;
+      margin-right: 5px;
+      .TotalMoneyLeftTopBox {
+        background-color: $col-blue-sea;
+        border-radius: 5px;
+        padding: 3px;
+        margin-bottom: 5px;
+      }
+      .TotalMoneyLeftBottBox {
+        background-color: $col-orange;
+        border-radius: 5px;
+        padding: 3px;
+      }
+    }
+    .TotalMoneyRight {
+      background-color: $col-green;
+      border-radius: 5px;
+      padding: 5px;
+      color: $col-white-grey-bg;
+      height: 90px;
+      text-align: center;
+      .TotalMoneyRightHeading {
+        font-size: 16px;
+      }
+    }
+  }
+  .FilterDate {
+    width: 40%;
+    height: 90px;
+    background-color: $col-white-blue-bg;
+    border-radius: 5px;
+    margin-right: 5px;
+    form {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      height: inherit;
+      padding: 5px;
+      .FilterDateButton {
+        input {
+          width: 150px;
+          height: 25px;
+          background-color: $col-blue-sea;
+          color: $col-white-grey-bg;
+          border-radius: 5px;
+          border: none;
+        }
+      }
+      .FilterDateRowWrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        .FilterDateLeft {
+          height: calc(90px - 25px - 5px - 3px);
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: space-between;
+          .FilterDateHead {
+            width: 100%;
+            text-align: center;
+          }
+          .FilterDateInput {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 5px;
+            .FilterDateInputText {
+              margin: 0px 3px;
+            }
+            input {
+              border-radius: 5px;
+              border: none;
+              padding: 4px;
+            }
+          }
+        }
+        // .FilterStages {
+        //   padding: 0px 5px;
+        //   select {
+        //     border-radius: 5px;
+        //     border: 0.5px solid rgba(105, 105, 105, 0.26);
+        //     padding: 4px;
+        //     margin-top: 4px;
+        //     #leads{
+        //         background-color: rgb(139, 22, 22);
+        //     }
+        //   }
+        // }
+      }
+    }
+  }
+}

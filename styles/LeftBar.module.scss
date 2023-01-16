@@ -1,0 +1,33 @@
+@import './variables.scss';
+
+
+.wrapper {
+    display: flex;
+    .LeftBar {
+      width: 250px;
+      height: calc(100vh  - $header-hieght);
+      background-color: $col-dark-grey-bg;
+      padding: 15px 0px;
+      color: $col-white-grey-bg;
+      .h3White {
+        color: $col-white-grey-bg;
+        text-align: center;
+      }
+    }
+    .contentBlock {
+
+      @include shadow-black;
+      width: 100%;
+      height: calc(100vh - $header-hieght - $footer-height);
+      padding: 15px 15px;
+      background-color: $col-white-grey-bg;
+      footer {
+        //height: $footer-height;
+        margin-top: 15px;
+        padding-left: 15px;
+        font-size: 12px;
+      }
+    }
+    
+}
+//$col-white-grey-bg

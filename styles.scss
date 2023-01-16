@@ -1,0 +1,77 @@
+@import './variables.scss';
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@500;600&family=JetBrains+Mono:wght@200&family=Nunito&family=PT+Sans&display=swap'); 
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Nunito', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+h1 {
+font-family: 'Fira+Sans',  -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+Oxygen, Ubuntu, Cantarell, Droid Sans, Helvetica Neue, sans-serif;;
+font-size: 44px;
+font-weight: 600;
+line-height: 40px;
+color: $col-h1;
+}
+
+h2 {
+  font-family: 'PT Sans', sans-serif;
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 40px;
+  color: $col-h2;
+}
+
+h3 {
+  font-family: 'PT Sans', sans-serif;
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 38px;
+  color: $col-h3;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+h1,
+h2,
+p,
+ul {
+  margin: 0;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  font-weight: bold;
+}
+
+menu {
+  margin: 0px;
+  padding: 0px;
+}
+ table {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border-spacing: 0px;
+ }
